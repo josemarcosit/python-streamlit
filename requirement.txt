@@ -1,0 +1,6 @@
+sqlalchemy
+pandas
+pyodbc
+streamlit
+time
+plotly.express
