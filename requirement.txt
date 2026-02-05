@@ -3,4 +3,5 @@ pandas
 pyodbc
 streamlit
 time
-plotly.express
+plotly
+matplotlib
