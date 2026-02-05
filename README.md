@@ -87,18 +87,45 @@ python-streamlit/
 ├── app.py                 # Main application with the dashboard
 ├── northwind.ipynb       # Jupyter Notebook with exploratory analyses
 ├── requirement.txt       # Project dependencies
-└── README.md            # This file
+├── README.md            # This file
+└── images/
+    ├── main-dash.png             # Main KPIs screenshot
+    ├── revenue-dash.png          # Revenue analysis screenshot
+    └── top-selling-dash.png      # Top categories screenshot
 ```
 
 ## 📊 Features
 
 ### Main Dashboard (`app.py`)
 
-- **Key Indicators**: Cards showing key statistics from the database
-- **Dynamic Charts**: Interactive visualizations with Plotly
-- **Period Analysis**: Monthly and annual revenue analysis
-- **Top Categories**: Ranking of categories by product quantity
-- **Geographic Distribution**: Analysis of orders by country and city
+- **Key Indicators (KPIs)**: Real-time cards displaying main metrics
+  - Revenue (in USD)
+  - Total Orders
+  - Customers
+  - Products
+  - Deliveries, Employees, Cities, Stock Units, Suppliers, and Categories
+
+- **Interactive Charts**: Beautiful visualizations powered by Plotly
+  - Monthly Revenue Analysis (Bar Charts)
+  - Shipment Distribution (Pie Charts)
+  - Top Selling Categories with detailed metrics
+  
+- **Professional UI**: Modern design with custom styling
+  - Responsive layout
+  - Currency formatting for all monetary values
+  - Emoji icons for better visual identification
+  - Dark-friendly color scheme
+
+#### Dashboard Screenshots
+
+**Main KPIs Overview**
+![Main Dashboard](images/main-dash.png)
+
+**Revenue Analysis Section**
+![Revenue Dashboard](images/revenue-dash.png)
+
+**Top Selling Categories**
+![Top Categories Dashboard](images/top-selling-dash.png)
 
 ### Exploratory Notebook (`northwind.ipynb`)
 
@@ -114,6 +141,8 @@ This project uses the **Northwind** database from SQL Server. Make sure you have
 1. SQL Server installed and running
 2. Northwind database restored
 3. User and password configured correctly
+
+> **Note:** The dashboard displays data from the Northwind sample database, including products, orders, customers, and suppliers from the years 1996-1998.
 
 ## 📝 Environment Variables (Optional)
 
@@ -153,10 +182,19 @@ connection_string = os.getenv("DATABASE_URL")
 
 This project is provided as is for educational and demonstration purposes.
 
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs or issues
+- Suggest new features
+- Improve documentation
+- Submit pull requests
+
 ## ✉️ Contact
 
 For questions or suggestions, open an issue in the repository.
 
 ---
 
-**Developed with ❤️ using Streamlit**
+**Developed with ❤️ using Streamlit and Python**
+*Last Updated: February 5, 2026*
